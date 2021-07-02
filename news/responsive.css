@@ -1,0 +1,104 @@
+/*		Tablet Layout: 768px.	  */
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+.column{width:750px}
+
+.headermenu {
+  display: none;
+}
+.logo {
+  width: 220px;
+}
+.mainmenu #nav li a {
+ 
+  font-size: 14px;
+ 
+  padding: 15px 8px;
+}
+.left_slider {
+  height: 240px;
+  margin-right: 10px;
+  width: 550px;
+}
+.right_video {
+ 
+  padding-bottom: 10px;
+ 
+  width: 150px;
+}
+.single_video_right img {
+  
+  margin-right: 5px;
+}
+.single_video_right h3 {
+ 
+  font-size: 11px;
+  font-weight: lighter;
+  line-height: 10px;
+
+}
+.single_video_right {
+  padding: 5px 5px;
+}
+
+
+.right_sidebar {
+  width: 150px;
+}
+.middle_content {
+  margin-right: 10px;
+  width: 150px;
+}
+.left_content {
+  margin-right: 10px;
+  position: relative;
+  width: 390px;
+}
+.latest_form_catagory {
+  margin-left: 0px;
+  position: relative;
+  width: 400px;
+}
+.single_cate_post {
+ 
+  margin-left: 7px;
+  width: 123px;
+}
+.gallery_content img {
+
+  width: 120px;
+}
+.single_tech_catagory {
+  
+  width: 190px;
+}
+.footermenu li a {
+  padding: 0 8px;
+}
+
+}
+
+
+
+/*		Mobile Layout: 320px.  */
+		  
+
+@media only screen and (max-width: 767px) {
+
+	.column{width:300px}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px. */
+		   
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.column{width:450px}
+
+}
