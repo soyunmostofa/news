@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- custome Style  -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .selected {
+            border: 1px solid purple;
+
+        }
+
+        .hr {
+            border-top-width: 3px;
+        }
+    </style>
+
+    <title>Mackbook</title>
+</head>
+
+<body>
+    <main>
+        <!-- Top section -->
+        <section>
+            <div class="container mx-auto px-4 md:px-2">
+                <div class="grid grid-cols-2">
+                    <!-- images section  -->
+                    <div class="p-10 m-10">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+
+
+                    <div class=" ">
+                        <h1 class="text-5xl text-black-700 pb-10 mt-20">Customize Your Blue 24 inch iMac with apple M1
+                            chip
+                        </h1>
+                        <p class=" text-xl text-justify text-gray-700">
+                            Apple M1 chip with 8-core CPU with 4 performance cores and 4 effeciency cores, 7 core GPU,
+                            and 16 core nural engine 8GB unified memory 256GB SSD storage Two thunderbolt/USB 4 ports
+                            Magic mouse Magic keyboard -US English
+                        </p>
+
+                        <div class="pt-10">
+                            <h2 class="text-xl text-black-900 pb-2">Memory</h2>
+                            <button id="memory-8GB" class=" text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            rounded
+                          ">8GB unified Memory</button>
+                            <button id="memory-16GB" class="text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            rounded
+                          ">16GB unified Memory</button>
+                        </div>
+                        <div class="pt-10">
+                            <h2 class="text-xl text-black-900 pb-2">Storgae</h2>
+                            <button id="SSD-256GB" class="text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            roundedd
+                          ">256GB SSD Storage</button>
+                            <button id="SSD-516GB" class="text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            rounded
+                          ">516GB SSD Storage</button>
+                            <button id="SSD-1TB" class="text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            rounded
+                          ">1TB SSD Storage</button>
+                        </div>
+                        <div class="flex-auto pt-10">
+                            <h2 class="text-xl text-black-900 pb-2">Choose Your Delivery option</h2>
+                            <button id="free-shipping" class="text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            rounded
+                          ">Friday,Aug 25 Free Prime Delivery</button>
+                            <button id="delivery-charge" class="text-black-700 hover:text-white bg-white hover:bg-gray-900
+                            p-2
+                            border border-gray-200
+                            shadow
+                            hover:shadow-lg
+                            rounded
+                          ">Friday,Aug 21 Delivery charge $20</button>
+                        </div>
+                        <div class="grid grid-cols-2 pt-20">
+                            <div>
+                                <div class="flex justify-between pt-4 border-b">
+                                    <div class="text-xl font-bold text-center text-gray-800">
+                                        Best price
+                                    </div>
+                                    <div class="font-bold text-center text-gray-900">
+                                        $1299
+                                    </div>
+                                </div>
+                                <div class="flex justify-between pt-4 border-b">
+                                    <div class="text-xl font-bold text-center text-gray-800">
+                                        Extra Memory cost
+                                    </div>
+                                    <div class="font-bold text-center text-gray-900">
+                                        $<span id="extra-Memory-Cost">0</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between pt-4 border-b">
+                                    <div class="text-xl font-bold text-center text-gray-800">
+                                        Extra Storage cost
+                                    </div>
+                                    <div class="font-bold text-center text-gray-900">
+                                        $<span id="extra-storage">0</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between pt-4 border-b">
+                                    <div class="text-xl font-bold text-center text-gray-800">
+                                        Delivery charge
+                                    </div>
+                                    <div class="font-bold text-center text-gray-900">
+                                        $ <span id="delivery-charge-20">0</span>
+                                    </div>
+                                </div>
+                                <hr class="hr">
+                                <div class="flex justify-between pt-4 border-b">
+                                    <div class="text-xl font-bold text-center text-gray-800">
+                                        Total Price
+                                    </div>
+                                    <div class="font-bold text-center text-gray-900">
+                                        $<span id="total-Price">1299</span>
+                                    </div>
+                                </div>
+                                <!-- promo code section -->
+                                <h1 class="pt-8 pb-4 text-grey-500 font-bold">Add Promo Code</h1>
+                                <div class="flex items-center pb-3">
+                                    <input class="border-2 p-2 border-gray-200" type="" name="" id="promo-kaku"
+                                        placeholder="stevekaku" value="" />
+                                    <button on type="submit" onclick="applypromo()" class=""><span id="apply-promo"
+                                            class=" bg-red-500 text-white p-2 rounded">Apply</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+        <!-- Bottom section  -->
+        <section>
+            <hr size=30 class="p-4">
+            <h2 class="text-center text-4xl font-bold">Total $<span id="final-Total">1299</span> </h2>
+        </section>
+
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
